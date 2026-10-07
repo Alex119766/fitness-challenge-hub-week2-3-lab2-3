@@ -5,7 +5,6 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,17 +12,17 @@ import java.util.Date;
 
 /**
  * Domain model representing a fitness challenge in FitSquad Hub.
+ * Uses standard Lombok annotations for getters/setters and constructors.
+ * Note: Builder pattern is intentionally omitted per project specifications.
  * Includes Jakarta Bean Validation constraints for form input validation.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Challenge {
 
     private Long id;
 
-    @Builder.Default
     private Date createdAt = new Date();
 
     @NotBlank(message = "Challenge title is required")
@@ -54,7 +53,6 @@ public class Challenge {
 
     private String imageUrl;
 
-    @Builder.Default
     private boolean active = true;
 
     /**

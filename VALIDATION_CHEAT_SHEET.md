@@ -152,12 +152,10 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class WorkoutLog {
 
     private Long id;
 
-    @Builder.Default
     private Date createdAt = new Date();
 
     @NotBlank(message = "Athlete name is required")

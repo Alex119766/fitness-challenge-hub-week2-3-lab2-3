@@ -85,7 +85,7 @@ src/main/resources/templates/
 ### Step 1: Domain Model (`WorkoutLog.java`)
 
 Create `WorkoutLog.java` inside `src/main/java/com/example/FitnessChallengeApp_Test/model/`:
-- Annotate the class with `@Data`, `@NoArgsConstructor`, `@AllArgsConstructor`, and `@Builder`.
+- Annotate the class with `@Data`, `@NoArgsConstructor`, and `@AllArgsConstructor`.
 - Define the following fields with their corresponding Jakarta Bean Validation annotations:
 
 | Field Name | Type | Validation Constraints & Rules |
